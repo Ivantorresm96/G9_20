@@ -39,6 +39,11 @@
             echo json_encode("Socio de Negocio Actualizado");
         break;
 
+        case "DeleteSocio":
+            $datos=$socios->delete_socio($body["ID"]);
+            echo json_encode("Socio de Negocio eliminado");
+        break;
+
 
     }
 

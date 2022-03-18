@@ -58,6 +58,17 @@
             $sql->execute();
             return $resultado=$sql->fetchAll(PDO::FETCH_ASSOC);
         }
+
+        public function delete_socio($id){
+            $conectar= parent ::conexion();
+            parent::set_names();
+            $sql="DELETE FROM ma_socios_negocio  WHERE id=?;";
+            $sql=$conectar->prepare($sql);
+            $sql->bindValue(1,$id);
+            $sql->execute();
+            return $resultado=$sql->fetchAll(PDO::FETCH_ASSOC);
+        }
+
     }
 
 
