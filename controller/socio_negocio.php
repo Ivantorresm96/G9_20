@@ -35,7 +35,7 @@
         break;
 
         case "UpdateSocio":
-            $datos=$socios->update_socio($body["ID"],$body["NOMBRE"],$body["RAZON SOCIAL"],$body["DIRECCION"],$body["TIPO_SOCIO"],$body["CONTACTO"],$body["EMAIL"],$body["FECHA_CREADO"],$body["ESTADO"],$body["TELEFONO"]);
+            $datos=$socios->update_socio($body["ID"],$body["NOMBRE"],$body["RAZON_SOCIAL"],$body["DIRECCION"],$body["TIPO_SOCIO"],$body["CONTACTO"],$body["EMAIL"],$body["FECHA_CREADO"],$body["ESTADO"],$body["TELEFONO"]);
             echo json_encode("Socio de Negocio Actualizado");
         break;
 
